@@ -131,29 +131,28 @@ nav .container {
     width: 100%;
     box-sizing: border-box;
 }
-section{
+section {
     padding-top: 4vh;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 10rem; /* Add padding instead of margin */
     box-sizing: border-box;
-    min-height: fit-content;
 }
 
-.section-container{
+.section-container {
     display: flex;
 }
-.title{
+.title {
     font-size: 80px;
     color: orange;
     font-weight: 600;
     text-align: center;
 }
-.heading-tag{
+.heading-tag {
     text-align: center;
     font-size: 25px;
     font-style: italic;
 }
-.text-container{
+.text-container {
     text-align: center;
     font-size: 16px;
     margin-top: 2rem;
@@ -164,7 +163,6 @@ section{
     justify-content: space-around; /* Space out images evenly */
     align-items: center;
     flex-wrap: wrap; /* Allow images to wrap to the next line if there's not enough space */
-   
 }
 
 .image ul {
@@ -199,12 +197,12 @@ section{
     background-color: transparent; /* Keep the background transparent */
     padding: 5px 10px; /* Optional: add padding if needed */
 }
-.caption h1{
+.caption h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 600;
 }
-.caption h3{
+.caption h3 {
     text-align: center;
     font-size: 20px;
     font-weight: 600;
@@ -345,15 +343,57 @@ button.cardbtn:hover {
     transform: scale(1.05);
 }
 #connect {
-    background-color: black;
+    background-image: url(bgim.jpeg);
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Add this */
-    z-index: -1; /* Add this */
-    margin-left: -11vw;
-  }
-  
+    position: relative;
+    margin-left: -10rem; /* Adjusted to match section padding */
+}
 
+.btncnt {
+    width: 200px;
+    height: 60px;
+    color: white;
+    background: black;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#connect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* This makes sure the content is centered vertically within the viewport height */
+}
+.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    margin-bottom: 20px; /* Add some space between the title and the button */
+}
+.btncnt {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btncnt span {
+    margin-left: 10px;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.5s;
+    display: inline-block;
+}
+.btncnt:hover span {
+    width: 30px;
+    cursor: pointer;
+}
