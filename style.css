@@ -397,3 +397,171 @@ button.cardbtn:hover {
     width: 30px;
     cursor: pointer;
 }
+#news {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: -10rem;
+}
+
+#news .title {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+
+.news img {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.news {
+    width: 100vw;
+    height: 450px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px rgb(219, 208, 208);
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative; /* Add position relative to contain absolutely positioned elements */
+}
+
+.top-left-text {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.intro {
+    height: 50px;
+    width: 306px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(27, 27, 27, 0.5);
+    color: white;
+    bottom: 0px;
+    border-radius: 10px;
+    text-align: center;
+    transition: .5s;
+}
+
+.news h2 {
+    margin: 2px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.news p {
+    margin: 20px;
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.news:hover {
+    cursor: pointer;
+}
+
+.news:hover .intro {
+    height: 300px;
+    bottom: 0px;
+    background: black;
+}
+
+.news:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.news:hover img {
+    transform: scale(1.1) rotate(-3deg);
+}
+.impinfo {
+    display: flex;
+    width: 100vw;
+    margin-left: -10rem;
+    box-sizing: border-box;
+    background-color: black; /* Added background color for visibility */
+}
+
+.address, .cnct, .links {
+    width: 600px;
+    height: 200px; /* Adjusted height for uniformity */
+    border: 1px solid rgba(255, 255, 255, 0.916);
+    border-left: none ;
+    display: flex;
+    color: white;
+
+}
+.address h1, .cnct h1, .links h1 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.cnct{
+    background-color: #121212; /* Dark background */
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.quick-connect h3 {
+    margin-bottom: 10px;
+    font-weight: normal;
+    margin-bottom: 5rem;
+}
+
+.quick-connect p {
+    margin: 5px 0;
+    color: white;
+}
+
+.icon {
+    margin-right: 8px;
+}
+.connect-with-us {
+    margin-top: 2rem;
+    margin-left: 5rem;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #121212;
+    border: none;
+    color: #fff;
+}
+.connect-with-us span {
+    margin-top: 2px;
+    margin-left: 10px;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.5s;
+    display: inline-block;
+}
+.connect-with-us:hover span {
+    width: 30px;
+    cursor: pointer;
+}
+.cnct .connect-with-us{
+    
+}
+
+
+
+
