@@ -9,7 +9,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
 }
 
 html {
@@ -20,19 +20,17 @@ p {
     color: rgb(85, 85, 85);
 }
 
-/* Transition */
-a, 
+a,
 .btn {
     transition: all 300ms ease;
 }
 
-/* Desktop Nav */
 nav {
     display: flex;
-    justify-content: space-between; /* Space between logo and nav links */
+    justify-content: space-between;
     align-items: center;
     height: 17vh;
-    padding: 0 20px; /* Add padding to prevent content from touching the edges */
+    padding: 0 20px;
 }
 
 .nav-links {
@@ -54,35 +52,22 @@ a:hover {
     text-decoration-color: rgb(181, 181, 181);
 }
 
-/* Logo Styling */
 .logo {
     font-size: 2rem;
-    display: flex; /* Ensures proper alignment */
-    align-items: center; /* Centers logo vertically */
-}
-
-.logo:hover {
-    cursor: default;
-}
-
-/* Optional: If the logo has an image */
-.logo img {
-    max-height: 100%; /* Ensures logo fits within the nav height */
-    display: block; /* Removes default inline spacing */
-}
-
-/* Adjustments to the container if needed */
-nav .container {
-    width: 100%;
     display: flex;
-    justify-content: space-between; /* Space out elements in the nav */
+    align-items: center;
+}
+
+.logo img {
+    max-height: 100%;
+    display: block;
 }
 
 .video-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Ensures the video stays within its container */
+    height: 100vh;
+    overflow: hidden;
 }
 
 .mainvideo {
@@ -91,7 +76,7 @@ nav .container {
     bottom: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video covers the background */
+    object-fit: cover;
     z-index: -1;
 }
 
@@ -104,21 +89,19 @@ nav .container {
 
 .content h1 {
     font-size: 160px;
-    color: orange;
+    color: #e0ac1c;
     font-weight: 600;
     margin: 0;
     transition: 0.5s;
 }
+
 .content h1:hover {
-    -webkit-text-stroke: 5px orange;
+    -webkit-text-stroke: 5px #e0ac1c;
     color: transparent;
 }
 
 .content h3 {
     font-style: italic;
-    /* text-decoration: underline; */
-    text-decoration-thickness: 3px;
-    text-underline-offset: 5px;
     font-size: 3rem;
     font-weight: 600;
     color: rgb(14, 1, 26);
@@ -127,56 +110,60 @@ nav .container {
 .below-video-content {
     padding: 20px;
     text-align: center;
-    background-color: white; /* Optional: Background color for contrast */
+    background-color: white;
     width: 100%;
     box-sizing: border-box;
 }
+
 section {
     padding-top: 4vh;
     min-height: 100vh;
-    padding: 0 10rem; /* Add padding instead of margin */
+    padding: 0 10rem;
     box-sizing: border-box;
 }
 
 .section-container {
     display: flex;
 }
+
 .title {
     font-size: 80px;
-    color: orange;
+    color: #e0ac1c;
     font-weight: 600;
     text-align: center;
 }
+
 .heading-tag {
     text-align: center;
     font-size: 25px;
     font-style: italic;
 }
+
 .text-container {
     text-align: center;
     font-size: 16px;
     margin-top: 2rem;
 }
-/* Image container styles */
+
 .image {
     display: flex;
-    justify-content: space-around; /* Space out images evenly */
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; /* Allow images to wrap to the next line if there's not enough space */
+    flex-wrap: wrap;
 }
 
 .image ul {
-    list-style-type: none; /* Remove default list styling */
+    list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap; /* Ensure images wrap if necessary */ /* Add space between images */
+    flex-wrap: wrap;
 }
 
 .image li {
     position: relative;
     display: inline-block;
-    flex: 1 1 auto; /* Allow items to grow and shrink as needed */
+    flex: 1 1 auto;
 }
 
 .image img {
@@ -184,8 +171,9 @@ section {
     margin-top: 6rem;
     height: 280px;
     width: 380px;
-    object-fit: cover; /* Ensure images fit nicely within their container */
+    object-fit: cover;
 }
+
 .caption {
     position: absolute;
     top: 60%;
@@ -194,14 +182,16 @@ section {
     font-size: 30px;
     color: black;
     transition: transform 0.3s ease, color 0.3s ease;
-    background-color: transparent; /* Keep the background transparent */
-    padding: 5px 10px; /* Optional: add padding if needed */
+    background-color: transparent;
+    padding: 5px 10px;
 }
+
 .caption h1 {
     text-align: center;
     font-size: 35px;
     font-weight: 600;
 }
+
 .caption h3 {
     text-align: center;
     font-size: 20px;
@@ -212,6 +202,7 @@ section {
     transform: translate(-50%, -50%) scale(1.5);
     color: black;
 }
+
 .wrapper {
     width: 100%;
     height: 100vh;
@@ -231,7 +222,7 @@ section {
 .card {
     position: relative;
     width: 120px;
-    border-radius: .75rem;
+    border-radius: 0.75rem;
     background-size: cover;
     cursor: pointer;
     overflow: hidden;
@@ -239,8 +230,8 @@ section {
     margin: 0 10px;
     display: flex;
     align-items: flex-end;
-    transition: .6s cubic-bezier(.28,-0.03,0,.99);
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
 }
 
 .card::before {
@@ -248,7 +239,7 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) ;
+    transform: translate(-50%, -50%);
     color: black;
     font-size: 18px;
     font-weight: 700;
@@ -276,8 +267,8 @@ input:checked + label::before {
     width: 520px;
     opacity: 0;
     transform: translateY(30px);
-    transition-delay: .3s;
-    transition: all .3s ease;
+    transition-delay: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .description p {
@@ -322,14 +313,14 @@ label[for="c3"] {
 label[for="c4"] {
     background-image: url('marrige.jpeg');
 }
-/* General button styles */
+
 button.cardbtn {
     margin-left: 10px;
     text-align: left;
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
-    color: orange;
+    color: #e0ac1c;
     background-color: transparent;
     border: none;
     border-radius: 5px;
@@ -337,11 +328,11 @@ button.cardbtn {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Button hover effect */
 button.cardbtn:hover {
     color: black;
     transform: scale(1.05);
 }
+
 #connect {
     background-image: url(bgim.jpeg);
     width: 100vw;
@@ -350,7 +341,7 @@ button.cardbtn:hover {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-left: -10rem; /* Adjusted to match section padding */
+
 }
 
 .btncnt {
@@ -371,21 +362,25 @@ button.cardbtn:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh; /* This makes sure the content is centered vertically within the viewport height */
+    height: 100vh;
 }
+
 .connect {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.title {
-    margin-bottom: 20px; /* Add some space between the title and the button */
+
+.connect .title {
+    margin-bottom: 20px;
 }
+
 .btncnt {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
 }
+
 .btncnt span {
     margin-left: 10px;
     width: 0;
@@ -393,10 +388,12 @@ button.cardbtn:hover {
     transition: width 0.5s;
     display: inline-block;
 }
+
 .btncnt:hover span {
     width: 30px;
     cursor: pointer;
 }
+
 #news {
     background-color: black;
     width: 100vw;
@@ -405,7 +402,6 @@ button.cardbtn:hover {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-left: -10rem;
 }
 
 #news .title {
@@ -421,7 +417,7 @@ button.cardbtn:hover {
     width: 100%;
     height: 450px;
     border-radius: 10px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .news {
@@ -431,7 +427,7 @@ button.cardbtn:hover {
     box-shadow: 5px 5px 20px rgb(219, 208, 208);
     overflow: hidden;
     border-radius: 10px;
-    position: relative; /* Add position relative to contain absolutely positioned elements */
+    position: relative;
 }
 
 .top-left-text {
@@ -453,10 +449,10 @@ button.cardbtn:hover {
     position: absolute;
     background: rgba(27, 27, 27, 0.5);
     color: white;
-    bottom: 0px;
+    bottom: 0;
     border-radius: 10px;
     text-align: center;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .news h2 {
@@ -478,7 +474,7 @@ button.cardbtn:hover {
 
 .news:hover .intro {
     height: 300px;
-    bottom: 0px;
+    bottom: 0;
     background: black;
 }
 
@@ -490,78 +486,179 @@ button.cardbtn:hover {
 .news:hover img {
     transform: scale(1.1) rotate(-3deg);
 }
-.impinfo {
-    display: flex;
-    width: 100vw;
-    margin-left: -10rem;
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
     box-sizing: border-box;
-    background-color: black; /* Added background color for visibility */
+    width: 100%;
+    text-align: left;
+    font: bold 16px;
+    padding: 50px 50px 60px 50px;
 }
 
-.address, .cnct, .links {
-    width: 600px;
-    height: 200px; /* Adjusted height for uniformity */
-    border: 1px solid rgba(255, 255, 255, 0.916);
-    border-left: none ;
-    display: flex;
-    color: white;
-
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
 }
-.address h1, .cnct h1, .links h1 {
-    margin-left: 10px;
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font-size:  36px;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 25%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
     font-size: 20px;
+    line-height: 2;
     font-weight: 600;
 }
-.cnct{
-    background-color: #121212; /* Dark background */
-    color: #fff; /* White text color */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
 }
-.quick-connect h3 {
-    margin-bottom: 10px;
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width:30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
     font-weight: normal;
-    margin-bottom: 5rem;
+    margin: 0;
 }
 
-.quick-connect p {
-    margin: 5px 0;
-    color: white;
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.icon {
-    margin-right: 8px;
+.footer-distributed .footer-icons {
+    margin-top: 25px;
 }
-.connect-with-us {
-    margin-top: 2rem;
-    margin-left: 5rem;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #121212;
-    border: none;
-    color: #fff;
+.footer-distributed .footer-icons {
+    text-align: center; /* center align icons */
 }
-.connect-with-us span {
-    margin-top: 2px;
-    margin-left: 10px;
-    width: 0;
-    overflow: hidden;
-    transition: width 0.5s;
+
+.footer-distributed .footer-icons a {
     display: inline-block;
-}
-.connect-with-us:hover span {
-    width: 30px;
+    width: 35px; /* adjust width and height as needed */
+    height: 35px; /* adjust width and height as needed */
     cursor: pointer;
+    overflow: hidden; /* ensure the image fits within the specified width and height */
+    position: relative;
+    margin: 0 10px; /* adjust the margin to create space between icons */
+    transition: transform 0.3s ease; /* smooth transition for hover effect */
 }
-.cnct .connect-with-us{
-    
+
+.footer-distributed .footer-icons a:hover {
+    transform: scale(1.2); /* zooms in the image on hover */
 }
 
+.footer-distributed .footer-icons a img {
+    width: 100%; /* ensures the image fills the anchor element */
+    height: auto; /* maintains aspect ratio */
+}
 
+.footer-links a:hover {
+    color: #e0ac1c;
+}
 
-
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
